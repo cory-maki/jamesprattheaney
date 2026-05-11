@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Jim Pratt-Heaney | Founding Partner, Coastal Bridge Advisors | Weston, CT</title>
+<meta name="description" content="Learn about Jim Pratt-Heaney, founding partner of Coastal Bridge Advisors in Weston, CT. Over 30 years in financial services, CIMA®-credentialed, advisory board member, and committed community advocate."/>
+<link rel="canonical" href="https://jimprattheaney.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://jimprattheaney.netlify.app/#person",
+      "name": "Jim Pratt-Heaney",
+      "jobTitle": "Founding Partner, Coastal Bridge Advisors",
+      "url": "https://jimprattheaney.netlify.app/",
+      "image": "https://jimprattheaney.netlify.app/images/hero.jpg",
+      "description": "Jim Pratt-Heaney is a founding partner of Coastal Bridge Advisors with over 30 years of experience in financial services, specializing in investment management and long-term wealth planning.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Weston",
+        "addressRegion": "CT",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/jim-pratt-heaney-cima%C2%AE-6b918620",
+        "https://es.quora.com/profile/Jim-Pratt-Haney",
+        "https://www.reddit.com/user/JimPrattHaney/",
+        "https://github.com/JimPrattHaney",
+        "https://dribbble.com/jimpratthaney",
+        "https://wordpress.com/reader/users/jimpratthaney",
+        "https://vimeo.com/jimpratthaney",
+        "https://www.producthunt.com/@jimpratthaney",
+        "https://jimprattheaney.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://jimprattheaney.netlify.app/#website",
+      "url": "https://jimprattheaney.netlify.app/",
+      "name": "Jim Pratt-Heaney",
+      "publisher": { "@id": "https://jimprattheaney.netlify.app/#person" }
+    },
+    {
+      "@type": "AboutPage",
+      "url": "https://jimprattheaney.netlify.app/about.html",
+      "name": "About Jim Pratt-Heaney",
+      "mainEntity": { "@id": "https://jimprattheaney.netlify.app/#person" }
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co/','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Jim Pratt-Heaney';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Jim<span> Pratt-Heaney</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Jim Pratt-Heaney</h1>
+  <p class="pg-sub">Founding Partner · Coastal Bridge Advisors · Weston, CT</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Jim Pratt-Heaney"/></div>
+    <div>
+      <div class="pc-nm">Jim Pratt-Heaney</div>
+      <div class="pc-rl">Founding Partner, Coastal Bridge Advisors</div>
+      <div class="pc-lc">Weston, CT</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Career</p>
+        <h2>Three Decades of Financial Leadership</h2>
+        <p>Jim Pratt-Heaney has spent more than 30 years building expertise at the intersection of financial analysis, market research, and client relationship management. As a founding partner of <a href="https://coastalbridgeadvisors.com/james-pratt-heaney" target="_blank" rel="noopener">Coastal Bridge Advisors</a>, Jim played a central role in shaping the firm's investment philosophy and client-first culture. His work spans long-term planning initiatives, portfolio strategy, and the kind of hands-on guidance that helps families think clearly about wealth across generations.</p>
+        <p>Pratt-Heaney's career has been defined not by chasing returns but by building relationships. His clients trust him precisely because he prioritizes their long-term financial wellbeing over short-term noise—an approach reflected in his writing on <a href="long-term-investing-principles.html">the principles behind patient investing</a> and the discipline required to stick to a plan when markets get volatile.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Credentials & Recognition</p>
+        <h2>Respected Across the Industry</h2>
+        <p>Jim holds the CIMA® (Certified Investment Management Analyst) designation, one of the most rigorous credentials in the wealth management field, earned through the <a href="https://jimprattheaney.com/" target="_blank" rel="noopener">Investments &amp; Wealth Institute</a>. He currently serves on the Advisory Board for Pershing Advisor Solutions, contributing to the strategic direction of one of the country's largest custodial platforms for independent advisors.</p>
+        <p>His expertise has brought him before national audiences: Jim has been featured on Fox Business Channel and the Dow Jones Advisor Show, speaking on investment strategy, market conditions, and the evolving landscape of independent wealth management. His profile on <a href="https://www.forbes.com/lists/top-ria-firms/" target="_blank" rel="noopener">Forbes' top RIA firms list</a> reflects Coastal Bridge Advisors' standing in the industry. His media appearances underscore a commitment to educating not just his own clients but the broader investing public.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Education</p>
+        <h2>A Foundation of Continuous Learning</h2>
+        <p>Jim Pratt-Heaney earned his undergraduate degree from Marist College and has continued his education at two of the country's most respected institutions: Ohio State University and The Wharton School of Management Center. This commitment to ongoing learning is a theme throughout Jim's career—he approaches both markets and client relationships with the curiosity of someone who believes there is always more to understand.</p>
+        <p>That same intellectual humility shapes how he talks with clients. Rather than positioning himself as an oracle, Jim works to help people think through complexity clearly—turning financial jargon into plain language and long-term strategy into concrete, actionable steps. For a deeper look at his educational philosophy in practice, see his piece on <a href="family-wealth-planning.html">building wealth across generations</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Community</p>
+        <h2>Giving Back to Weston and Beyond</h2>
+        <p>Jim Pratt-Heaney is as committed to his community as he is to his clients. His involvement in civic and charitable activities in Weston, CT reflects a belief that financial success creates an obligation to give back—and that meaningful philanthropy starts with genuine relationships, not just checkbooks. He has been actively involved with local organizations and causes that support youth development and community wellbeing.</p>
+        <p>His approach to community engagement mirrors his approach to wealth management: personal, consistent, and built for the long term. Jim has also written on the topic of <a href="community-philanthropy-wealth.html">integrating philanthropy into financial planning</a>—a subject he cares about both professionally and personally. You can follow his community work and updates on <a href="https://www.linkedin.com/in/jim-pratt-heaney-cima%C2%AE-6b918620" target="_blank" rel="noopener">his LinkedIn profile</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Personal</p>
+        <h2>Family, Music, and Life in Connecticut</h2>
+        <p>Beyond his professional life, Jim is a dedicated family man and an avid guitarist. He and his wife live in Weston, CT, surrounded by their children and their growing families. That sense of family—of legacy and care across generations—is not incidental to Jim's work. It is, in many ways, the whole point of it.</p>
+        <p>The values Jim brings to his personal life and the values he brings to client work are the same: patience, loyalty, curiosity, and a deep belief that the best things in life are built slowly, with intention. Pratt-Heaney brings that same long-term perspective to every client conversation—whether the topic is portfolio construction, estate planning, or simply what a family wants their wealth to mean.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Firm</span><span class="fv">Coastal Bridge Advisors</span></div>
+        <div class="fr"><span class="fl">Role</span><span class="fv">Founding Partner</span></div>
+        <div class="fr"><span class="fl">Experience</span><span class="fv">30+ Years</span></div>
+        <div class="fr"><span class="fl">Credential</span><span class="fv">CIMA®</span></div>
+        <div class="fr"><span class="fl">Education</span><span class="fv">Marist College; Ohio State; Wharton</span></div>
+        <div class="fr"><span class="fl">Location</span><span class="fv">Weston, CT</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Jim Pratt-Heaney on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Jim Pratt-Heaney in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Jim Pratt-Heaney. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
